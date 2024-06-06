@@ -1,0 +1,9 @@
+<resources>
+    <string-array name="tea_array">
+        <item>全部</item>
+        <item>果茶</item>
+        <item>奶茶</item>
+        <item>纯茶</item>
+    </string-array>
+</resources>
+

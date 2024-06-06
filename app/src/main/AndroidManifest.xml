@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.storage">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAG" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="华南理工大学国际校区饮料点餐系统"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegisterActivity" android:theme="@style/Theme.Design.NoActionBar" />
+        <activity android:exported="true"  android:name=".LoginActivity" android:theme="@style/Theme.Design.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShoppingChannelActivity"
+            tools:ignore="Instantiatable"  android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".ShoppingCartActivity"
+            tools:ignore="Instantiatable"  android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".ShoppingDetailActivity"
+            tools:ignore="Instantiatable"  android:theme="@style/Theme.Design.NoActionBar" />
+    </application>
+
+</manifest>
